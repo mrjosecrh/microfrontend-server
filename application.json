@@ -1,0 +1,17 @@
+{
+    "oauth" : {
+      "google": {
+        "client": {
+          "id": "abcde.apps.googleusercontent.com",
+          "secret": "efghi",
+          "callbackUrl": "http://localhost:8080/auth/google/callback",
+          "scope": ["https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile"]
+        }
+      },
+      "express" : {
+        "loginRoute" : "/auth/google",
+        "callbackRoute" : "/auth/google/callback",
+        "failureRedirectRoute" : "/login"
+      }
+    }
+}
